@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+}
+
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-family: 'Poppins';
+}
+
+.reliableText{
+    font-weight: 300;
+    color: hsl(229, 6%, 66%);
+}
+
+.poweredText{
+    font-weight: bold;
+    color: hsl(234, 12%, 34%);
+}
+
+p{
+    color: hsl(229, 6%, 66%);
+}
+
+
+
+@media (min-width:992px)
+{
+    .cardContainer{
+        width: 390px;
+    }
+    .paragraphArtificial{
+        display: inline-block;
+        width: 500px;
+    }
+}
+
+@media (min-width:320px) and (max-width:991px)
+{
+    .cardContainer{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .row{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+.cardContainer{
+    box-shadow: 0 5px 5px hsla(0, 0%, 0%, 0.267);
+}
+
+.cyanTop{
+    border-top: 5px var(--cyan) solid;
+}
+
+.redTop{
+    border-top: 5px var(--red) solid;
+}
+.orangeTop{
+    border-top: 5px var(--orange) solid;
+}
+.blueTop{
+    border-top: 5px var(--blue) solid;
+}
